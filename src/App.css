@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Overall layout */
+.app {
   display: flex;
-  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #3f0e40;
+  color: #fff;
+  padding: 20px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Sidebar styles */
+.sidebar__header {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar__header h2 {
+  font-size: 20px;
+  margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar__channels h2,
+.sidebar__direct-messages h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.sidebar__channels ul,
+.sidebar__direct-messages ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar__channels li,
+.sidebar__direct-messages li {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* ChannelList styles */
+.channel-list h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.channel-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.channel-list li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.channel-list li.active {
+  font-weight: bold;
+}
+
+/* ChannelMessages styles */
+.channel-messages h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.message-list {
+  height: 400px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message__sender {
+  font-weight: bold;
+}
+
+.message__content {
+  margin-top: 5px;
+}
+
+/* DirectMessages styles */
+.direct-messages h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* FileSharing styles */
+.file-sharing h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.file-list {
+  margin-bottom: 20px;
+}
+
+.file {
+  margin-bottom: 10px;
+}
+
+.file__name {
+  font-weight: bold;
+}
+
+.file__size {
+  margin-top: 5px;
 }
