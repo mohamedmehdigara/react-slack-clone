@@ -10,119 +10,64 @@
 /* Overall layout */
 .app {
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.sidebar {
-  width: 300px;
+.header {
   background-color: #3f0e40;
   color: #fff;
   padding: 20px;
 }
 
-.content {
-  flex-grow: 1;
-  padding: 20px;
-}
-
-/* Sidebar styles */
-.sidebar__header {
+.header__nav {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: space-between;
 }
 
-.sidebar__header h2 {
-  font-size: 20px;
-  margin-left: 10px;
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.sidebar__channels h2,
-.sidebar__direct-messages h2 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.sidebar__channels ul,
-.sidebar__direct-messages ul {
+.header__menu {
   list-style: none;
-  padding: 0;
+  display: flex;
 }
 
-.sidebar__channels li,
-.sidebar__direct-messages li {
-  margin-bottom: 5px;
-  cursor: pointer;
+.header__menu li {
+  margin-right: 20px;
 }
 
-/* ChannelList styles */
-.channel-list h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
+.header__menu a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.channel-list ul {
-  list-style: none;
-  padding: 0;
+.header__search {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 4px 8px;
 }
 
-.channel-list li {
-  margin-bottom: 10px;
-  cursor: pointer;
+.header__search input {
+  border: none;
+  background: none;
+  outline: none;
+  margin-left: 8px;
 }
 
-.channel-list li.active {
-  font-weight: bold;
+.header__actions {
+  display: flex;
 }
 
-/* ChannelMessages styles */
-.channel-messages h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
+.header__actions a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
-.message-list {
-  height: 400px;
-  overflow-y: scroll;
-  margin-bottom: 20px;
-}
-
-.message {
-  margin-bottom: 10px;
-}
-
-.message__sender {
-  font-weight: bold;
-}
-
-.message__content {
-  margin-top: 5px;
-}
-
-/* DirectMessages styles */
-.direct-messages h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-/* FileSharing styles */
-.file-sharing h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.file-list {
-  margin-bottom: 20px;
-}
-
-.file {
-  margin-bottom: 10px;
-}
-
-.file__name {
-  font-weight: bold;
-}
-
-.file__size {
-  margin-top: 5px;
-}
+/* Rest of your CSS styles */
