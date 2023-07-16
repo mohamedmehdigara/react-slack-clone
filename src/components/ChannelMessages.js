@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ChannelMessages = () => {
   // Example channel messages data
@@ -7,6 +7,14 @@ const ChannelMessages = () => {
     { id: 2, sender: "Jane Smith", message: "Hey, how are you?" },
     // Add more channel messages here
   ];
+
+  const [newMessage, setNewMessage] = useState("");
+
+  const handleMessageSend = () => {
+    // Add logic to handle sending the message
+    console.log("Sending message:", newMessage);
+    setNewMessage("");
+  };
 
   return (
     <div className="channel-messages">
@@ -20,7 +28,13 @@ const ChannelMessages = () => {
         ))}
       </div>
       <div className="message-input">
-        {/* Add message input field and send button here */}
+        <input
+          type="text"
+          placeholder="Type your message..."
+          value={newMessage}
+          onChange={(e) => setNewMessage(e.target.value)}
+        />
+        <button onClick={handleMessageSend}>Send</button>
       </div>
     </div>
   );
