@@ -7,6 +7,7 @@ import FileSharing from "./components/FileSharing";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import SignupButtons from "./components/SignupButtons";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
             
           
         </Routes>
+        <SignupButtons/>
       </div>
     </Router>
   );
