@@ -107,6 +107,112 @@
 }
 
 /* App.css */
+/* App.css */
+
+.main {
+  background-color: #f6f6f6;
+  padding: 40px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.main__content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main__companies {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.main__companies li {
+  margin: 10px;
+}
+
+.main__section {
+  margin-bottom: 40px;
+}
+
+.main__section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main__section p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.main__section a {
+  color: #3f0e40;
+  text-decoration: none;
+}
+
+.main__stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.main__stats div {
+  width: 30%;
+  text-align: center;
+}
+
+.main__stats span {
+  font-weight: bold;
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main__testimonial {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.main__disclaimer {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.main__link {
+  color: #3f0e40;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.main__links {
+  display: flex;
+  justify-content: center;
+}
+
+.main__links a {
+  color: #3f0e40;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #3f0e40;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+
+.main__links a:hover {
+  background-color: #3f0e40;
+  color: #fff;
+}
 
 /* App.css */
 

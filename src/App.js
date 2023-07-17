@@ -18,13 +18,13 @@ const App = () => {
         <Header />
         <Sidebar />
         <Routes>
-          <Route path="/main" element={<Main />} />
           <Route path="/channel/:channelId" element={<ChannelList />} />
           <Route path="/channelmessages" element={<ChannelMessages />} />
           <Route path="/directmessage/:userId" element={<DirectMessages />} />
           <Route path="/filesharing" element={<FileSharing />} />
         </Routes>
         <SignupButtons />
+        <Main/>
         <Footer />
       </div>
     </Router>
