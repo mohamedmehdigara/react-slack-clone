@@ -67,6 +67,19 @@ const Footer = () => {
 
           </ul>
         </div>
+        <div className="footer__bottom-links">
+        <a href="#">Statut</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">Conditions</a>
+        <a href="#">Vos choix en matière de confidentialité</a>
+        <a href="#">Préférences de cookies</a>
+        <a href="#">Nous contacter</a>
+        <a href="#">Changer de région</a>
+        <a href="#">Télécharger Slack</a>
+      </div>
+      <p className="footer__copyright">
+        ©2023 Slack Technologies, LLC, une entreprise Salesforce. Tous droits réservés. Les différentes marques commerciales appartiennent à leurs propriétaires respectifs.
+      </p>
       </div>
     </footer>
   );
