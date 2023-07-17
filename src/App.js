@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import SignupButtons from "./components/SignupButtons";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
           
         </Routes>
         <SignupButtons/>
+        <Footer/>
       </div>
     </Router>
   );
